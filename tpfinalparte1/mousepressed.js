@@ -24,15 +24,13 @@ function mousePressed () {
       camino = 'aangB';
       imagActual = 0;
       dialogoActual = 0;
-    } 
-    
+    }
     else if (mouseX > 350 && mouseX < 500 && mouseY > 400 && mouseY < 440) {
       camino = 'aang'
       imagActual++;
       dialogoActual++;
     }
   }
-
   if (!creditos && !(camino === 'aang' && imagActual === imagAang.length - 3)) {
     if (mouseX < 480+50 && mouseX > 480 && mouseY > 420 && mouseY < 440) {
       
@@ -46,15 +44,11 @@ function mousePressed () {
           imagActual++;
           dialogoActual = (dialogoActual + 1) % tomaDiaDelCamActual().length;
         } else {
-          
           creditos = true;
         }
       }
     }
   }
-
-
-  
   if (creditos && mouseX > width / 2 - 75 && mouseX < width / 2 - 75 + 150 && mouseY > height / 2 + 50 && mouseY < height / 2 + 50 + 35) {
     camino = 'intro';
     imagActual = 0;
