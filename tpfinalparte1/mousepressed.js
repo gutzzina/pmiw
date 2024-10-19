@@ -35,7 +35,7 @@ function mousePressed () {
 
   if (!creditos && !(camino === 'aang' && imagActual === imagAang.length - 3)) {
     if (mouseX < 480+50 && mouseX > 480 && mouseY > 420 && mouseY < 440) {
-      // Avanzar en la intro
+      
       if (camino === 'intro') {
         if (imagActual < imagIntro.length - 1) {
           imagActual++;
