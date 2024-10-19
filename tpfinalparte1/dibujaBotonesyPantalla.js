@@ -1,13 +1,13 @@
 function dibujarBoton(x, y, ancho, alto, tex) {
-  fill(0, 0, 0, 128);  // Fondo semi-transparente
-  stroke(255);         // Borde blanco
-  strokeWeight(1);     // Grosor del borde
-  rect(x, y, ancho, alto, 10);  // Dibuja el rectángulo del botón con esquinas redondeadas
+  fill(0, 0, 0, 128);  
+  stroke(255);         
+  strokeWeight(1);     
+  rect(x, y, ancho, alto, 10);  
 
   noStroke();
-  fill(255);           // Texto en blanco
+  fill(255);          
   textAlign(CENTER, CENTER);
-  text(tex, x + ancho / 2, y + alto / 2);  // Centra el texto en el botón
+  text(tex, x + ancho / 2, y + alto / 2);  
 }
 
 function dibujaCreditos() {
