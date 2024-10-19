@@ -33,7 +33,6 @@ function mousePressed () {
     }
   }
 
-  // Flecha para avanzar en la intro y caminos
   if (!creditos && !(camino === 'aang' && imagActual === imagAang.length - 3)) {
     if (mouseX < 480+50 && mouseX > 480 && mouseY > 420 && mouseY < 440) {
       // Avanzar en la intro
@@ -42,12 +41,12 @@ function mousePressed () {
           imagActual++;
           dialogoActual++;
         }
-      } else { // Avanzar en los caminos (Aang, Sokka, AangB)
+      } else { 
         if (imagActual < imagDelCamActual().length - 1) {
           imagActual++;
           dialogoActual = (dialogoActual + 1) % tomaDiaDelCamActual().length;
         } else {
-          // Si llegamos al final del camino, mostramos créditos
+          
           creditos = true;
         }
       }
@@ -55,7 +54,7 @@ function mousePressed () {
   }
 
 
-  // Botón para volver al inicio desde los créditos
+  
   if (creditos && mouseX > width / 2 - 75 && mouseX < width / 2 - 75 + 150 && mouseY > height / 2 + 50 && mouseY < height / 2 + 50 + 35) {
     camino = 'intro';
     imagActual = 0;
