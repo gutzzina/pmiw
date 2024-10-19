@@ -83,22 +83,22 @@ function draw() {
   }
   
    if (texto && !(camino === 'intro' && imagActual === 0) ) {
-    //  márgenes
+    
     let margenIzquierdo = 50;
     let margenDerecho = 640 - 90;
     let margenSuperior = 360;
     let margenInferior = 460;
-    // Ajustes de texto
+    
     fill(255); 
-    textAlign(LEFT, TOP); // Alinear el texto a la izquierda y arriba
+    textAlign(LEFT, TOP); 
     textSize(16); 
-    textWrap(WORD); // Ajustar el texto en palabras
-    let anchoTexto = margenDerecho - margenIzquierdo; // Ancho disponible para el texto
+    textWrap(WORD); 
+    let anchoTexto = margenDerecho - margenIzquierdo; 
     push();
     fill(0,0,0,100);
     rect(40, 350, 500,100,10);
     pop();
-    // Dibuja dentro de los márgenes
+    
     text(texto, margenIzquierdo, margenSuperior, anchoTexto, margenInferior - margenSuperior);
   }
   
@@ -109,7 +109,7 @@ function draw() {
  if (!(camino === 'intro' && imagActual === 0) && !creditos && !(camino === 'intro' && imagActual === imagIntro.length - 1) && 
  !(camino === 'aang' && imagActual === imagAang.length - 3) )  {
     image(flecha, 480, 350+70, 50, 20);
-    // print("Flecha dibujada en (440, 420)");
+    
   }
   
   if (camino === 'intro' && imagActual === imagIntro.length - 1) {
@@ -128,6 +128,6 @@ function draw() {
     dibujarBoton (100, 400, 150, 40, "No");
     dibujarBoton(350, 400, 150, 40, "Beso");
     }
-   // print (mouseX + "," + mouseY);
+   
     
 }
