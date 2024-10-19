@@ -19,7 +19,7 @@ function tomaDiaDelCamActual() {
   } else if (camino === 'aangB') {
     return dialogosCAB;
   } else {
-    return dialogos;  // Camino intro por defecto
+    return dialogos;  
   }
 }
 function tomaDialogo() {
