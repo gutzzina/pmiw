@@ -121,7 +121,5 @@ function draw() {
     if (camino === 'aang' && imagActual === imagAang.length - 3){
     dibujarBoton (100, 400, 150, 40, "No");
     dibujarBoton(350, 400, 150, 40, "Beso");
-    }
-   
-    
+    }    
 }
