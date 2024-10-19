@@ -26,7 +26,6 @@ function preload() {
     loadImage('data/intro/foto3.jpg'),
     loadImage('data/separados1.jpeg')
   ];
-
   imagSokka = [
    loadImage('data/Sokka/cs1.png'),
     loadImage('data/Sokka/cs2.jpg'),
@@ -42,7 +41,6 @@ function preload() {
     loadImage('data/Sokka/cs12.jpg'),
     loadImage('data/Sokka/cs13.jpg')
   ];
-
   imagAang = [
   loadImage('data/aang(1)/aang1.png'),
     loadImage('data/aang(1)/aang2.jpg'),
@@ -98,10 +96,8 @@ function draw() {
     fill(0,0,0,100);
     rect(40, 350, 500,100,10);
     pop();
-    
     text(texto, margenIzquierdo, margenSuperior, anchoTexto, margenInferior - margenSuperior);
   }
-  
   if(camino === 'intro' && imagActual === 0){
   dibujarBoton(100, 400, 400, 50, "Iniciar Aventura");
   }
@@ -109,9 +105,7 @@ function draw() {
  if (!(camino === 'intro' && imagActual === 0) && !creditos && !(camino === 'intro' && imagActual === imagIntro.length - 1) && 
  !(camino === 'aang' && imagActual === imagAang.length - 3) )  {
     image(flecha, 480, 350+70, 50, 20);
-    
   }
-  
   if (camino === 'intro' && imagActual === imagIntro.length - 1) {
     text("¡Ups! Al entrar a la cueva, un derrumbe separó los grupos.", 300, 170);
     dibujarBoton(100, 400, 150, 40, "Seguir a Aang");
