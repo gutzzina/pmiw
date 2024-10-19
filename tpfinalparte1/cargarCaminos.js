@@ -10,6 +10,6 @@ function imagDelCamActual() {
   } else if (camino === 'aangB') {
     return imagAangB;
   } else {
-    return imagIntro;  // Camino intro por defecto
+    return imagIntro; 
   }
 }
