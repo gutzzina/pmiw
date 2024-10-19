@@ -113,7 +113,7 @@ function draw() {
   }
   
   if (camino === 'intro' && imagActual === imagIntro.length - 1) {
-    text("¡Ups! Al entrar a la cueva, un derrumbe que separó los grupos.", 300, 170);
+    text("¡Ups! Al entrar a la cueva, un derrumbe separó los grupos.", 300, 170);
     dibujarBoton(100, 400, 150, 40, "Seguir a Aang");
     dibujarBoton(350, 400, 150, 40, "Seguir a Sokka");
   }
