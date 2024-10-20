@@ -1,3 +1,6 @@
+//Youtube URL: https://www.youtube.com/watch?v=b031Hx_ndPk
+//Fiorella Rocío Gavilan Legajo 119039/8.
+
 let song, songPlaying = false;
 let imagIntro = [], imagActual = 0, imagSokka=[], imagAang=[], imagAangB=[];
 let camino = 'intro';
